@@ -1,0 +1,47 @@
+Typiske DOM-methods:
+
+getElementById(id):
+Denne metoden lar deg velge og hente en HTML-element etter dens unike id-attributt. Den returnerer en referanse til elementet 
+eller null hvis ingen element med den spesifikke id-en finnes.
+
+getElementsByClassName(className): Denne metoden returnerer en samling (HTMLCollection) av alle elementer i dokumentet med det
+spesifikke klassenavnet. Du kan få tilgang til individuelle elementer ved å bruke deres indeks i samlingen.
+
+getElementsByTagName(tagName): Returnerer en samling av alle elementer med det spesifikke tag-navnet (for eksempel 'div', 'p', 'a').
+Den returnerer også en HTMLCollection som du kan iterere gjennom.
+
+querySelector(selector): Lar deg velge det første elementet som matcher den gitte CSS-selektoren. Den returnerer det første matchende
+elementet eller null hvis ingen match finnes.
+
+querySelectorAll(selector): Lik querySelector, men den returnerer en NodeList som inneholder alle elementer som matcher den gitte
+CSS-selektoren.
+
+createElement(tagName): Oppretter et nytt HTML-element med det spesifikke tag-navnet. Du kan deretter legge til dette elementet 
+i dokumentet eller manipulere det før du legger det til.
+
+appendChild(node): Legger til en barnnode i en foreldrenode. Du kan bruke denne metoden til å legge til elementer eller tekstnoder
+som barn til eksisterende elementer.'
+
+removeChild(node): Fjerner en child-node fra sin parent. Du må spesifisere child-noden du ønsker å fjerne som et argument.
+
+setAttribute(name, value): Setter eller oppdaterer en attributt til et HTML-element. Du oppgir attributtnavnet og den nye
+verdien som argumenter.
+
+getAttribute(name): Henter verdien til den spesifikke attributten fra et element. Du oppgir attributtnavnet som et argument.
+
+addEventListener(event, function): Festet en hendelseslytter til et element, som lar deg respondere på spesifikke hendelser
+(for eksempel klikk, tastetrykk). Når den spesifikke hendelsen oppstår, blir den angitte funksjonen utført.
+
+removeEventListener(event, function): Fjerner en tidligere festet hendelseslytter fra et element. Du må spesifisere hendelsestypen
+og funksjonen som skal fjernes.
+
+innerHTML: Method som lar deg hente eller sette HTML-innholdet til et element. Du kan bruke dette til å oppdatere innholdet til
+et element dynamisk.
+
+textContent: Method som lar deg hente eller sette tekstinnholdet til et element. I motsetning til innerHTML behandler den 
+innholdet som ren tekst og analyserer ikke HTML.
+
+style: Method som gir tilgang til de innebygde CSS-stilene til et element, slik at du kan manipulere utseendet programmatisk.
+
+node: En enkel enhet i et dokument som kan være et HTML-element, et tekstinnhold, en kommentar eller til og med hele dokumentet selv.
+HTML tags er element-noder
